@@ -1,0 +1,41 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  background-color: #25282a;
+}
+div,
+p {
+  margin: 0px;
+}
+.main {
+  background-color: yellow;
+  width: 50vw;
+  height: 25vw;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 30px;
+}
+.slider {
+  border: 1px solid black;
+  width: 90;
+
+  margin: 0 auto;
+}
