@@ -146,7 +146,7 @@ p {
 }
 @media (max-width: 1102px) {
   .text-par {
-    font-size: 15px;
+    font-size: 1em;
     letter-spacing: 0px;
     line-height: 20px;
   }
@@ -156,11 +156,18 @@ p {
     flex-direction: column;
   }
   .image-container2 {
-    width: 200px;
     position: relative;
-    left: -150px;
+    left: -200px;
   }
   .block-2 {
     margin-top: 10px;
+  }
+  .container {
+    margin: 0 auto;
+    width: 80vw;
+  }
+}
+@media (max-width: 500px) {
+  .text-par {
   }
 }
