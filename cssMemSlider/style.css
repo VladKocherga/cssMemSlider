@@ -80,7 +80,7 @@ p {
 }
 /*text*/
 .block-2 {
-  font-size: 60%;
+  font-size: 1.5em;
   color: white;
 }
 .figure-text {
@@ -146,7 +146,7 @@ p {
 }
 @media (max-width: 1102px) {
   .text-par {
-    font-size: 2em;
+    font-size: 1em;
     letter-spacing: 0px;
     line-height: 40px;
   }
@@ -165,5 +165,9 @@ p {
   .container {
     margin: 0 auto;
     width: 80vw;
+  }
+  .mem-image {
+    width: 100%;
+    height: 40vw;
   }
 }
