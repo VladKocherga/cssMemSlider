@@ -1,5 +1,6 @@
 body {
   background-color: #25282a;
+  font-size: 30px;
 }
 label {
   cursor: pointer;
@@ -17,20 +18,21 @@ p {
   width: 20%;
   float: left;
 }
-
+.text1 {
+  width: 20%;
+}
 .image-container .image {
   width: 500%;
   line-height: 0;
+}
+.image-container2 {
+  width: 50%;
 }
 .mem-image {
   width: 100%;
   height: 40vw;
 }
-.mem-text {
-  color: white;
 
-  font-size: 30px;
-}
 .overflow-hidden {
   width: 100%;
   overflow: hidden;
@@ -61,6 +63,34 @@ p {
   margin-left: -300%;
 }
 
+#slider1:checked ~ .flex-textLabel .image-container .image {
+  margin-left: 0;
+}
+
+#slider2:checked ~ .flex-textLabel .image-container .image {
+  margin-left: -100%;
+}
+
+#slider3:checked ~ .flex-textLabel .image-container .image {
+  margin-left: -200%;
+}
+
+#slider4:checked ~ .flex-textLabel .image-container .image {
+  margin-left: -300%;
+}
+/*text*/
+.block-2 {
+  font-size: 60%;
+  color: white;
+}
+.figure-text {
+  height: 50vw;
+}
+.block-2 {
+  margin-top: 35px;
+}
+
+/*text*/
 #active label {
   display: flex;
   align-items: center;
@@ -91,19 +121,46 @@ p {
   border: 2px solid #fefefe;
 }
 
-#slider1:checked ~ #active .act1,
-#slider2:checked ~ #active .act2,
-#slider3:checked ~ #active .act3,
-#slider4:checked ~ #active .act4 {
+#slider1:checked ~ .flex-textLabel #active .act1,
+#slider2:checked ~ .flex-textLabel #active .act2,
+#slider3:checked ~ .flex-textLabel #active .act3,
+#slider4:checked ~ .flex-textLabel #active .act4 {
   background: none;
   border: 2px solid #76c8ff;
 }
-#slider1:checked ~ #active .active1:hover .act1,
-#slider2:checked ~ #active .active2:hover .act2,
-#slider3:checked ~ #active .active3:hover .act3,
-#slider4:checked ~ #active .active4:hover .act4 {
+#slider1:checked ~ .flex-textLabel #active .active1:hover .act1,
+#slider2:checked ~ .flex-textLabel #active .active2:hover .act2,
+#slider3:checked ~ .flex-textLabel #active .active3:hover .act3,
+#slider4:checked ~ .flex-textLabel #active .active4:hover .act4 {
   border: 2px solid #fefefe;
 }
 .image-container .image {
   transition: all 800ms;
+}
+
+@media (max-width: 1557px) {
+  .text-par {
+    font-size: 0.8em;
+    letter-spacing: 0px;
+  }
+}
+@media (max-width: 1102px) {
+  .text-par {
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 20px;
+  }
+  .flex-textLabel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image-container2 {
+    width: 200px;
+    position: relative;
+    left: -150px;
+  }
+  .block-2 {
+    margin-top: 10px;
+  }
 }
