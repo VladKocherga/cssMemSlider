@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Mem Slider</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
   </head>
   <body>
-    <main class="main">
-      <div class="slider"></div>
-    </main>
+    <div class="container">
+      <input checked type="radio" name="respond" id="desktop" />
+      <main id="slider">
+        <input type="radio" name="slider" id="slider1" />
+        <input type="radio" name="slider" id="slider2" class="slider-number" />
+        <input type="radio" name="slider" id="slider3" class="slider-number" />
+        <input
+          checked
+          type="radio"
+          name="slider"
+          id="slider4"
+          class="slider-number"
+        />
+
+        <div class="image-container">
+          <div class="overflow-hidden">
+            <div class="image">
+              <div class="figure">
+                <img class="mem-image" src="./assets/calmar.jpg" />
+              </div>
+              <div class="figure">
+                <img class="mem-image" src="./assets/mem.jpg" />
+              </div>
+              <div class="figure">
+                <img class="mem-image" src="./assets/mem1.png" />
+              </div>
+              <div class="figure">
+                <img class="mem-image" src="./assets/piroshok.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+          <label for="slider1" class="slider-number active1"></label>
+          <label for="slider2" class="slider-number active2"></label>
+          <label for="slider3" class="slider-number active3"></label>
+          <label for="slider4" class="slider-number active4"></label>
+        </div>
+        <div id="active">
+          <label for="slider1" class="slider-number active1"></label>
+          <label for="slider2" class="slider-number active2"></label>
+          <label for="slider3" class="slider-number active3"></label>
+          <label for="slider4" class="slider-number active4"></label>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
