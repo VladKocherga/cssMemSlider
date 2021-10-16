@@ -146,9 +146,9 @@ p {
 }
 @media (max-width: 1102px) {
   .text-par {
-    font-size: 1em;
+    font-size: 2em;
     letter-spacing: 0px;
-    line-height: 20px;
+    line-height: 40px;
   }
   .flex-textLabel {
     display: flex;
@@ -165,9 +165,5 @@ p {
   .container {
     margin: 0 auto;
     width: 80vw;
-  }
-}
-@media (max-width: 500px) {
-  .text-par {
   }
 }
